@@ -1,7 +1,8 @@
 {
   "SearchTest": {
     "BaseUrl": "https://www.google.com/ncr",
-    "SearchFor": "Selenium webdriver"
+    "SearchFor": "Selenium webdriver",
+    "ExpectedText": "What is a Selenium WebDriver?"
   },
   "UploadFileTest": {
     "BaseUrl": "https://the-internet.herokuapp.com/"
