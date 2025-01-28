@@ -101,7 +101,6 @@ public class Bot
     public boolean assertTextInSearchResultByIndex(WebDriver driver,By locator ,String targetText, int resultIndex) {
         try {
             // Wait for search results to load
-
             wait.until( d->{
                 driver.findElement(locator).isDisplayed();
                 return true;
@@ -122,8 +121,6 @@ public class Bot
 
             // Check if the specific result contains the target text
             if (resultText.contains(targetText)) {
-                System.out.println("Found the target text: (" + targetText + ") in search result: " + resultIndex + ": " + resultText);
-                // Attach a screenshot to the Allure report if test passes
                 return true;
             } else {
                 System.out.println("The target text ("+ targetText + ") was not found in result " + resultIndex + ".");

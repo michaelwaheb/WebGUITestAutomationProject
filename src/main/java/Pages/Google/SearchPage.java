@@ -36,7 +36,7 @@ public class SearchPage extends Page
         // Attach Result and snapshot to Allure report
         Allure.step("Success Result with Snapshot");
         Allure.addAttachment("The Target Text Found", "The target text("+ text + ") found in search result " + searchresultorder + ".");
-        Allure.addAttachment("Text Found Successfully", new ByteArrayInputStream(((ChromeDriver)driver).getScreenshotAs(OutputType.BYTES)));
+        Allure.addAttachment("Text Found Successfully SnapShot", new ByteArrayInputStream(((ChromeDriver)driver).getScreenshotAs(OutputType.BYTES)));
         return new SearchPage(driver);
     }
 

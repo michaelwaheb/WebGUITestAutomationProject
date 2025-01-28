@@ -40,7 +40,7 @@ public class FileUploadPage extends Page
         // Attach Result and snapshot to Allure report
         Allure.step("Success Result with Snapshot");
         Allure.addAttachment("Uploaded File Name", bot.getText(UploadedFileName));
-        Allure.addAttachment("FileUploadedSuccessfully", new ByteArrayInputStream(((ChromeDriver)driver).getScreenshotAs(OutputType.BYTES)));
+        Allure.addAttachment("File Uploaded Successfully SnapShot", new ByteArrayInputStream(((ChromeDriver)driver).getScreenshotAs(OutputType.BYTES)));
         return new FileUploadPage(driver);
     }
 }
