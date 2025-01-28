@@ -5,9 +5,11 @@
     "ExpectedText": "What is a Selenium WebDriver?"
   },
   "UploadFileTest": {
-    "BaseUrl": "https://the-internet.herokuapp.com/"
+    "BaseUrl": "https://the-internet.herokuapp.com/",
+    "FilePath": "src/test/resources/Technical Assessment.jpeg"
   },
   "DynamicLoadTest": {
-    "BaseUrl": "https://the-internet.herokuapp.com/"
+    "BaseUrl": "https://the-internet.herokuapp.com/",
+    "TextToLoad": "Hello World!"
   }
 }

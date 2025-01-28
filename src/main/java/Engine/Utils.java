@@ -6,7 +6,6 @@ import io.qameta.allure.internal.shadowed.jackson.databind.ObjectMapper;
 import org.openqa.selenium.WebDriver;
 import java.io.*;
 import java.nio.file.Paths;
-;
 
 public class Utils
 {
@@ -52,7 +51,7 @@ public class Utils
 
 
     }
-
+//Get Test Data from JSON file
     public static String getTestData(String Data) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {

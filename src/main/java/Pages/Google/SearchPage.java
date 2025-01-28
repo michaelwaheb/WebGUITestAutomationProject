@@ -33,6 +33,10 @@ public class SearchPage extends Page
     public SearchPage aseertSearchResultOrderContainsText(int searchresultorder, String text)
     {
         Assert.assertTrue(bot.assertTextInSearchResultByIndex(driver,SearchResult , text,searchresultorder), "The target text("+ text + ")not found in search result " + searchresultorder + ".");
+        // Attach Result and snapshot to Allure report
+        Allure.step("Success Result with Snapshot");
+        Allure.addAttachment("The Target Text Found", "The target text("+ text + ") found in search result " + searchresultorder + ".");
+        Allure.addAttachment("Text Found Successfully", new ByteArrayInputStream(((ChromeDriver)driver).getScreenshotAs(OutputType.BYTES)));
         return new SearchPage(driver);
     }
 
