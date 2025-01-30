@@ -51,10 +51,9 @@ sudo apt install allure
    ```bash
    git clone https://github.com/michaelwaheb/WebGUITestAutomationProject.git
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd WebGUITestAutomationProject
-   ```
+2. Open in IDE:
+   - Import the project as a Maven project in your IDE.
+
 3. Install dependencies:
    ```bash
    mvn install
