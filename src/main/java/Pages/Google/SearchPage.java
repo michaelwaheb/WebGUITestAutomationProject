@@ -22,7 +22,7 @@ public class SearchPage extends Page
     {
         super(driver);
     }
-
+    //Methods to interact
     @Step("Search for '{keyword}'")
     public SearchPage searchFor(String keyword)
     {

@@ -14,6 +14,7 @@ import java.io.File;
 
 public class FileUploadPage extends Page
 {
+   //Locators
     private final By ChooseFile = By.cssSelector("input[type=file]");
     private final By UploadBtn = By.id("file-submit");
     private final By UploadedFileName = By.id("uploaded-files");
@@ -23,6 +24,7 @@ public class FileUploadPage extends Page
         super(driver);
     }
 
+    //Methods to interact
     @Step("Upload File")
     public FileUploadPage uploadFile(String FilePath)
     {
@@ -37,6 +39,7 @@ public class FileUploadPage extends Page
         File FileDir = new File(FileName);
 
         Assert.assertEquals(bot.getText(UploadedFileName),FileDir.getName(), "File is not uploaded successfully");
+
         // Attach Result and snapshot to Allure report
         Allure.step("Success Result with Snapshot");
         Allure.addAttachment("Uploaded File Name", bot.getText(UploadedFileName));

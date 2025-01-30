@@ -14,7 +14,7 @@ public class HomePage extends Page
     {
         super(driver);
     }
-
+    //Methods to interact
     @Step("Click On File Upload")
     public FileUploadPage clickOnFileUpload()
     {

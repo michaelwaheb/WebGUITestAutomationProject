@@ -13,6 +13,7 @@ import java.io.ByteArrayInputStream;
 
 public class DynamicLoadingPage extends Page
 {
+    //Locators
     private final By Example2 = By.xpath("//a[@href='/dynamic_loading/2' and contains(text(),'Example 2')]");
     private final By StartBtn = By.xpath("//div[@id='start']/button[text()='Start']");
     private final By FinalMessage = By.id("finish");
@@ -21,6 +22,7 @@ public class DynamicLoadingPage extends Page
     {
         super(driver);
     }
+    //Methods to interact
     @Step("Click On Example 2")
     public DynamicLoadingPage clickOnExample2()
     {
