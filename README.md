@@ -8,7 +8,9 @@ This project automates the testing of web applications using Java, Selenium WebD
 - **Selenium WebDriver**: For automating web browsers and simulating user actions.
 - **TestNG**: A testing framework to run tests and manage test configurations.
 - **Page Object Model (POM)**: For better code organization and easier maintenance.
-- **Allure Reports** for generating detailed and accessible test reports
+- **Allure Reports** For generating detailed and accessible test reports.
+  
+---
 
 ## Prerequisites
 
@@ -58,6 +60,7 @@ sudo apt install allure
    ```bash
    mvn install
    ```
+---
 
 ## Running the Tests
 
@@ -70,7 +73,4 @@ mvn test
 
 The project is configured to automatically generate Allure reports after running the tests. You don't need to manually run any additional commands for report generation. Once the tests are executed using Maven, the Allure report is available within the project directory.
 
-To view the generated report, simply run the following command:
 
-```bash
-mvn allure:serve
